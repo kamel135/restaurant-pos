@@ -1,0 +1,71 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.71.0"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "7181e67ad47f34b02014200fd1cffca69f4f79f3",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "16.0.0-dev"
+    },
+    "restaurant_pos": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "098cad2f00551bc8eb9fa0bbb6534bc340927fdc",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "ury_pos": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "6a3af3289560dab8a89ba2f6358c9a5a41fba9e8",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.1.0-alpha.1"
+    },
+    "doppio": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "659410848e984aa12e933c068c95618b2207b2a6",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "ury_mosaic": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ab1c35b01d80d61f443007d06056aa18fb7aae8c",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.1.0-alpha.1"
+    },
+    "ury": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "7e22edabfef4c03ecb087d96b1a729d7fb687ce8",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "0.1.0-alpha.1"
+    }
+}

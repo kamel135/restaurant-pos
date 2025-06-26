@@ -1,32 +1,30 @@
 # Python
 *.pyc
 *.pyo
-*.pyd
 __pycache__/
-*.swp
-*.swo
-*.bak
-*.tmp
-*.pid
 *.log
+*.pid
 
-# Bench & Frappe
-env/
+# Node
 node_modules/
+*.lock
+
+# Env
+env/
+
+# Bench logs and cache
+logs/
 patches.txt
 
-# Bench structure
-frappe-bench/env/
-frappe-bench/sites/*/private/*
-frappe-bench/sites/*/backups/*
-frappe-bench/sites/*/logs/*
-frappe-bench/sites/assets/
-frappe-bench/sites/*.json
-frappe-bench/sites/*.csv
-frappe-bench/logs/
-frappe-bench/apps/*/node_modules/
-frappe-bench/apps/*/*.egg-info/
+# Ignore private and backup data
+sites/*/private/*
+sites/*/backups/*
+sites/*/logs/*
+sites/assets/
+sites/currentsite.txt
 
-# VSCode / Mac / System files
-.DS_Store
-.vscode/
+# Ignore specific files not needed
+*.swp
+*.swo
+*.tmp
+*.bak
