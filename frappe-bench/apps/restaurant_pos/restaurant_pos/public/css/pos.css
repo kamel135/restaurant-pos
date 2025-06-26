@@ -1,0 +1,144 @@
+/* خط افتراضي */
+.pos-container {
+    font-family: 'Cairo', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* اتجاه RTL للغة العربية */
+.pos-container[dir="rtl"] {
+    direction: rtl;
+}
+
+.pos-container[dir="rtl"] .cart-item {
+    flex-direction: row-reverse;
+}
+
+/* جزء اليسار (المنتجات) */
+.pos-left {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* جزء اليمين (السلة) */
+.pos-right {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* عنصر المنتج */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease;
+    background-color: #fefefe;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #666;
+}
+
+/* عنصر في السلة */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-name {
+    flex: 2;
+    font-size: 14px;
+    color: #222;
+}
+
+.cart-item-qty {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item-total {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #111;
+}
+
+/* الزرار */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* المجموع */
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* دعم التابلت والموبايل */
+@media (max-width: 768px) {
+    .pos-container {
+        flex-direction: column;
+    }
+
+    .pos-left,
+    .pos-right {
+        width: 100%;
+    }
+
+    .product-image {
+        height: 100px;
+    }
+}

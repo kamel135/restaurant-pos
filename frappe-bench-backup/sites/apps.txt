@@ -1,0 +1,7 @@
+frappe
+ury_mosaic
+doppio
+ury
+erpnext
+ury_pos
+restaurant_pos
