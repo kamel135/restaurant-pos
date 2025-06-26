@@ -1,0 +1,14 @@
+env/
+sites/
+*.pyc
+__pycache__/
+*.sqlite3
+*.log
+*.pid
+node_modules/
+*.DS_Store
+*.swp
+*.swo
+*.tar.gz
+*.zip
+*.bak

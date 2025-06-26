@@ -1,0 +1,5 @@
+frappe
+erpnext
+doppio
+ury_pos
+restaurant_pos
